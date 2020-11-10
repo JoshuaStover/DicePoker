@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dice Poker</title>
+	<link rel="stylesheet" href="css/DicePoker.css" type="text/css"/>
+</head>
+<body>
+    <div id="container">
+        <div id="gameGrid">
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c0">
+                        <p>Ones</p>
+                    </div>
+                    <div class="score" id="s0">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c1">
+                        <p>Twos</p>
+                    </div>
+                    <div class="score" id="s1">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c2">
+                        <p>Threes</p>
+                    </div>
+                    <div class="score" id="s2">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c3">
+                        <p>Fours</p>
+                    </div>
+                    <div class="score" id="s3">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c4">
+                        <p>Fives</p>
+                    </div>
+                    <div class="score" id="s4">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c5">
+                        <p>Sixes</p>
+                    </div>
+                    <div class="score" id="s5">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c6">
+                        <p>Three of a Kind</p>
+                    </div>
+                    <div class="score" id="s6">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c7">
+                        <p>Four of a Kind</p>
+                    </div>
+                    <div class="score" id="s7">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c8">
+                        <p>Five of a Kind</p>
+                    </div>
+                    <div class="score" id="s8">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c11">
+                        <p>Full House</p>
+                    </div>
+                    <div class="score" id="s11">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c9">
+                        <p>Four In A Row</p>
+                    </div>
+                    <div class="score" id="s9">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c10">
+                        <p>Five In A Row</p>
+                    </div>
+                    <div class="score" id="s10">&nbsp;</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="subrow">
+                    <div class="category" id="c12">
+                        <p>Two Pair</p>
+                    </div>
+                    <div class="score" id="s12">&nbsp;</div>
+                </div>
+                <div class="subrow">
+                    <div class="category" id="c13">
+                        <p>Mulligan</p>
+                    </div>
+                    <div class="score" id="s13">&nbsp;</div>
+                </div>
+            </div>
+            <div class="dice-row">
+                <div class="dice" id="d0">&nbsp;</div>
+                <div class="dice" id="d1">&nbsp;</div>
+                <div class="dice" id="d2">&nbsp;</div>
+                <div class="dice" id="d3">&nbsp;</div>
+                <div class="dice" id="d4">&nbsp;</div>
+            </div>
+            <div class="dice-row">
+                <div id="roll">
+                    <button type="button" id="rollButton">ROLL</button>
+                </div>
+            </div>
+            <div class="dice-row">
+                <div id="total">
+                    <button type="button" id="totalButton">SHOW TOTAL SCORE</button>
+                </div>
+            </div>
+            <div class="row">
+                <div id="game-over-block">
+                    <p id="finalScore"></p>
+                    <button type="button" id="resetButton">START OVER?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/DicePoker.js"></script>
+</html>
